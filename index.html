@@ -13,51 +13,72 @@
     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous">
 
-</head>
+    <!-- Navbar. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
     
-
-
-
-<!-- Navbar. -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar logo. -->
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Company Logo" width="50" height="50">
+                </a>
+            </div>
+        </nav>
     
-    <!-- Navbar logo. -->
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Company Logo" width="50" height="50">
-            </a>
+        <!-- Navbar links. -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Company</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="product1.html">Product 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product2.html">Product 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    
+        <link rel="stylesheet" href="css/style1.css">
+
     </nav>
     
-    <!-- Navbar links. -->
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Company</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="product1.html">Product 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="product2.html">Product 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <style>
 
-</nav>
+        body, html {
+          height: 100%;
+        }
+        
+        .parallax {
+          background-image: url('images/parallaxtest.jpg');
+          height: 100%;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
 
-<body>
+    </style>
+
+</head>
     
+<body>
+
+    <div class="parallax"></div>
+    <div class="parallaxtext"><strong>Company</strong></div>
+
+    
+
 </body>
 
 </html>
