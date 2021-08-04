@@ -13,6 +13,71 @@
     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous">
 
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+
+        /* Slideshow container */
+            .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 30%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+        }
+
+ 
+    </style>
+
 </head>
     
 
@@ -45,6 +110,9 @@
                     <a class="nav-link" href="product2.html">Product 2</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="product3.html">Product 3</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
@@ -57,7 +125,67 @@
 </nav>
 
 <body>
+
+    <h1>Product 2</h1>
+
+
+
+    <br>
     
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="https://st4.depositphotos.com/13324256/20808/i/1600/depositphotos_208086560-stock-photo-flat-lay-bottles-cream-natural.jpg" style="width:100%;">
+          <div class="text">Product Display</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="https://c8.alamy.com/comp/2A8MHKF/natural-skin-care-and-spa-set-on-white-soft-towel-background-with-natural-cosmetic-products-flower-green-leaves-candle-and-zen-like-stones-relax-c-2A8MHKF.jpg" style="width:100%;">
+          <div class="text">Product Display</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="https://thumbs.dreamstime.com/b/natural-spa-background-copy-space-flat-lay-organic-spa-cosmetic-products-natural-skincare-concept-white-natural-skincare-146658586.jpg" style="width:100%;">
+          <div class="text">Product Display</div>
+        </div>
+        
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>  
+       
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+  
 </body>
 
 </html>
