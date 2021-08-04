@@ -1,0 +1,47 @@
+.text {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.button {
+  border: solid black;
+  padding: 5px;
+  display: inline-block;
+  width: 50px;
+  margin: 0% 47.5%;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  
+  box-shadow: inset 0 0 0 0 lightgray;
+
+}
+.button:hover {
+  transition: ease-in 0.2s;
+  box-shadow: inset 50px 0 0 0 lightgray;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 45%;
+  
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#second-div {
+  background-image:linear-gradient(to right, #00BFFF, #FFD700) ;
+  padding: 50px;
+}
