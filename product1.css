@@ -1,6 +1,6 @@
 .text {
     position: absolute;
-    top: 50%;
+    top: 300px;
     left: 7.5%;
     color: white;
     font-family: 'Bebas Neue', cursive;
@@ -49,5 +49,5 @@
 
 #third-div {
     padding: 50px;
-    background-color: #ff8600;
+    background-color: lightskyblue;
 }
