@@ -78,26 +78,49 @@
 
 <body>
     <div>
-        <img src="https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHNob2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="first product" style="width: 100%; height: 450px; align-items: center; object-fit: cover; display:block; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+            <img class="mySlides" src="https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHNob2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="first product" style="width: 100%; height: 450px; align-items: center; object-fit: cover; display:block; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+            <img class="mySlides" src="https://i.ytimg.com/vi/PpK3LaGnb_s/maxresdefault.jpg" alt="first product" style="width: 100%; height: 450px; align-items: center; object-fit: cover; display:block; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+            <img class="mySlides" src="https://www.runningxpert.com/media/wysiwyg/Artikler/2020/IMG_2250.jpg" alt="first product" style="width: 100%; height: 450px; align-items: center; object-fit: cover; display:block; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+        
         <h1 class="text">OUR SHOE COLLECTION</h1>
-        
-        
+        <script>
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 2 seconds
+            }
+        </script>
     </div>
     <div display="absolute";>
-        <a href="#second-div" class="button button" ><i class="arrow down"></i></a>
+        <a href="#first-div" class="button button" ><i class="arrow down"></i></a>
         <br>
+    </div>
+    <div id="first-div">
+        <div style="left: 1%; float:right; position: relative; top: 5%; padding-top: 2.5%; padding-left: 5%;"><img src="https://i.pinimg.com/originals/6c/51/6b/6c516b2985fab0ba31e19fdf5a52eb66.jpg" alt="" style="width: 85%; height: 400px; object-fit: cover"></div>
+        <h2 style="padding-top: 14.5%; position: relative; left: 5%">Nike</h2>
+        <br>
+        <p style="text-align: left; padding-bottom: 15%; position: relative; left: 5%; width: 27.5%">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptate quos ratione neque in vel itaque, omnis adipisci tempora aliquam modi accusamus aspernatur dignissimos minima, saepe quibusdam necessitatibus aliquid veniam.</p>
     </div>
     <div id="second-div">
-        <div style="display: flex; justify-content: left; float: left"><img src="https://i.insider.com/59c14b709803c50d098b68e0?width=1000&format=jpeg&auto=webp" alt="picture of shoe" style="width: 70%"></div>
-        <h2 style="padding-top: 10%">next section</h2>
+        <div style="display: flex; justify-content: left; float: left;"><img src="https://i.insider.com/59c14b709803c50d098b68e0?width=1000&format=jpeg&auto=webp" alt="picture of shoe" style="width: 70%"></div>
+        <h2 style="padding-top: 10%">Vans</h2>
         <br>
-        <p style="text-align: left; padding-bottom: 15%">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor libero sed, debitis architecto placeat minus earum ab voluptatum sequi nam asperiores laboriosam aspernatur facere ratione ipsa sit reiciendis illum similique.</p>
+        <p style="text-align: left; padding-bottom: 15.5%;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor libero sed, debitis architecto placeat minus earum ab voluptatum sequi nam asperiores laboriosam aspernatur facere ratione ipsa sit reiciendis illum similique.</p>
     </div>
     <div id="third-div">
-        <div style="display: flex; justify-content: right; float: right"><img src="https://sneakernews.com/wp-content/uploads/2015/09/adidas-ultra-yeezy-boost-custom-01.jpg" alt=""></div>
-        <h2 style="padding-top: 14%">next section</h2>
+        <div style="display: flex; float: right; position: relatve; padding-top: 2.5%; padding-right: 2.5%;"><img src="https://sneakernews.com/wp-content/uploads/2015/09/adidas-ultra-yeezy-boost-custom-01.jpg" alt=""></div>
+        <h2 style="padding-top: 15%; position: relative; padding-left: 5%">Adidas</h2>
         <br>
-        <p style="text-align: left; padding-bottom: 15%">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptate quos ratione neque in vel itaque, omnis adipisci tempora aliquam modi accusamus aspernatur dignissimos minima, saepe quibusdam necessitatibus aliquid veniam.</p>
+        <p style="text-align: left; padding-bottom: 13.9212%; position: relative; left: 5%; width: 27.5%">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptate quos ratione neque in vel itaque, omnis adipisci tempora aliquam modi accusamus aspernatur dignissimos minima, saepe quibusdam necessitatibus aliquid veniam.</p>
     </div>
     
 
