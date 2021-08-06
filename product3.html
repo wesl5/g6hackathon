@@ -89,9 +89,29 @@
         background-color: lightblue;
         }
 
-        
+        #myDIV {
+  
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+#myDIV1 {
+  
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
 
- 
+#myDIV2 {
+  
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
     </style>
 
 </head>
@@ -141,11 +161,11 @@
 </nav>
 
 
-<body>
-
-    <h1>Shop Tops</h1>
+<body style="background-color: lightblue;">
 
 
+
+    <h1 style="margin: 5px;"> Shop Tops</h1>
 
     <br>
     
@@ -154,20 +174,17 @@
 
         <div class="mySlides fade">
           <div class="numbertext"></div>
-          <img src="https://images.unsplash.com/photo-1620012150748-c759a494c133?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGRyZXNzJTIwc2hpcnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" style="width:600px; height: 800px">
-          <div class="text">Product Display</div>
+          <img src="https://images.unsplash.com/photo-1620012150748-c759a494c133?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGRyZXNzJTIwc2hpcnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" style="width:600px; height: 800px"/>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext"></div>
-          <img src="https://i.pinimg.com/originals/73/f1/14/73f11461b00cf43c1c80bb1b38985b89.jpg"style="width:600px; height: 800px;">
-          <div class="text">Product Display</div>
+          <img src="https://i.pinimg.com/originals/73/f1/14/73f11461b00cf43c1c80bb1b38985b89.jpg"style="width:600px; height: 800px;"/>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext"></div>
-          <img src="https://cdn.shopify.com/s/files/1/0981/8178/files/back-to-black-outfit-black-utility-shirt.jpg?13215484419949015679" style="width: 600px; height: 800px;">
-          <div class="text">Product Display</div>
+          <img src="https://cdn.shopify.com/s/files/1/0981/8178/files/back-to-black-outfit-black-utility-shirt.jpg?13215484419949015679" style="width: 600px; height: 800px;"/>
         </div>
         
         </div>
@@ -191,7 +208,9 @@
             slides[i].style.display = "none";  
           }
           slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
+          if (slideIndex > slides.length) {slideIndex = 1;
+        
+        }    
           for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
           }
@@ -202,16 +221,19 @@
         </script>
 
 <div>
-    <h1 class="text">Shop Our Jacket Collectoion</h1>
-    
     
 </div>
-<div style="display:table; height: 600px; text-align: center; align-content: center; width:98%">
+<div style="display:table; height: 600px; text-align: center; align-content: center; width:100%; background-color: lightblue;">
 <div style="display:table-cell;vertical-align:middle;">
 <div class="center">
     <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmlrZXIlMjBqYWNrZXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" 
     width="400px;" height=400px; style="margin: 10px;"/>
 </div>
+<button onclick="myFunction1()" type="button" class="btn btn-default btn-arrow-left">Get Price of Jacket 1</button>
+    <div id="myDIV1">
+	$500.
+</div>
+
 </div>
 <div style="display:table-cell; vertical-align: middle;">
 <div class="center">
@@ -219,16 +241,65 @@
     
     width="400px;" height="400px" style="margin: 10px;"/>
 </div>
+<button onclick="myFunction2()" type="button" class="btn btn-default btn-arrow-left">Get Price of Jacket 2</button>
+    <div id="myDIV2">
+	$90.
+</div>
+
+
 </div>
 <div style="display:table-cell; vertical-align: middle;">
     <div class="center">
         <img src="https://asset20.ckassets.com/thegoodlookbook/wp-content/uploads/sites/2/2019/01/Screen-Shot-2019-01-05-at-5.32.30-pm-e1546690262367.png"
         
         width="400px;" height="400px" style="margin: 10px;"/>
+
     </div>
+<button onclick="myFunction()" type="button" class="btn btn-default btn-arrow-left">Get Price of Jacket 3</button>
+    <div id="myDIV">
+	$50.
+</div>
+</div>
+<div>
+
+
+    
+</div>
     </div>
 </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+myFunction();
 
+function myFunction1() {
+  var x = document.getElementById("myDIV1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+myFunction1();
+
+function myFunction2() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+myFunction2();
+
+</script>
+</div>
 </body>
 
 </html>
