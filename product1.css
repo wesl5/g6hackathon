@@ -33,7 +33,7 @@
   justify-content: center;
   padding: 10px;
   margin: 45%;
-  
+   
 }
 
 .down {
@@ -41,13 +41,21 @@
   -webkit-transform: rotate(45deg);
 }
 
+#first-div {
+    padding: 50px;
+    background-color: lightcyan;
+}
+
 #second-div {
   /*background-image:linear-gradient(to right, #00BFFF, #FFD700);*/
   padding: 50px;
-  background-color: #00bfff;
+  background-color: lightskyblue;
 }
 
 #third-div {
-    padding: 50px;
-    background-color: lightskyblue;
+    padding: 20px;
+    background-color: #00bfff;
 }
+
+
+
